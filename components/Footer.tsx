@@ -3,18 +3,18 @@ import Logo from "../assets/svg/logo.svg";
 
 export default function Footer() {
   return (
-    <footer className="container navbar">
-      <div className="navbar-wrapper">
-        <div className="navbar-logo">
-          <Logo className="navbar-logo-image" />
-          <div className="navbar-logo-text">COVID - 19</div>
+    <footer className="container footer">
+      <div className="footer-wrapper">
+        <div className="footer-logo">
+          <Logo className="footer-logo-image" />
+          <div className="footer-logo-text">COVID - 19</div>
         </div>
-        <div className="navbar-right">
-          <div className="navbar-menu">
-            <li className="navbar-menu-item">Overview</li>
-            <li className="navbar-menu-item">Contagion</li>
-            <li className="navbar-menu-item">Symptoms</li>
-            <li className="navbar-menu-item">Prevention</li>
+        <div className="footer-right">
+          <div className="footer-menu">
+            <li className="footer-menu-item">Overview</li>
+            <li className="footer-menu-item">Contagion</li>
+            <li className="footer-menu-item">Symptoms</li>
+            <li className="footer-menu-item">Prevention</li>
           </div>
         </div>
       </div>
