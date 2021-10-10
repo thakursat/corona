@@ -14,7 +14,7 @@ export default function index() {
       <WhatIs />
       <Contagion />
       <Symptoms />
-      <div className="anyques">
+      <div className="anyques container">
         <p className="anyques-text">
           Have Question in mind?
           <br /> Let us help you

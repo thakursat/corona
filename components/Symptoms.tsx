@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Symptoms() {
   return (
-    <div className="symptoms">
+    <div className="symptoms container">
       <div className="symptoms-head">
         <div className="symptoms-head1">COVID-19</div>
         <div className="symptoms-head2">Symptoms</div>

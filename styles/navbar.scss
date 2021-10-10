@@ -28,6 +28,7 @@
     text-decoration: none;
     list-style: none;
     padding: 0px 1rem;
+    color: $heading;
   }
   &-menu-button {
     border: 2px solid $red;
@@ -38,8 +39,16 @@
   }
 }
 
+.footer {
+  &-text {
+    text-align: center;
+    margin: 14px;
+    color: $heading;
+  }
+}
+
 @media only screen and (max-width: 992px) {
   .navbar-menu {
-    flex-direction: column;
+    display: none;
   }
 }

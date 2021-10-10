@@ -1,5 +1,7 @@
 import React from "react";
-import Image from "next/image";
+import AirTrans from "../assets/svg/air_trans.svg";
+import Contained from "../assets/svg/contained.svg";
+import Human from "../assets/svg/human.svg";
 
 export default function Contagion() {
   return (
@@ -13,46 +15,43 @@ export default function Contagion() {
         </div>
       </div>
       <div className="contagion-wrapper">
-        <Card
-          image={"/contagion_air.png"}
-          head={"Air Transmission"}
-          para={
-            "Objectively evolve tactical expertise before extensible initiatives. Efficiently simplify"
-          }
-        />
-        <Card
-          image={"/contagion_human.png"}
-          head={"Human Contacts"}
-          para={"Washing your hands is one of thesimplest ways you can protect"}
-        />
-        <Card
-          image={"/contagion_contained.png"}
-          head={"Containted Objects"}
-          para={
-            "Use the tissue while sneezing,In this way, you can protect your droplets."
-          }
-        />
+        <div className="contagion-card">
+          <div className="contagion-card-image">
+            <AirTrans />
+          </div>
+          <div className="contagion-card-text">
+            <div className="contagion-card-text-head">Air Transmission</div>
+          </div>
+          <div className="contagion-card-text-para">
+            Objectively evolve tactical expertise before extensible initiatives.
+            Efficiently simplify
+          </div>
+        </div>
+        <div className="contagion-card">
+          <div className="contagion-card-image">
+            <Human />
+          </div>
+          <div className="contagion-card-text">
+            <div className="contagion-card-text-head">Human Contacts</div>
+          </div>
+          <div className="contagion-card-text-para">
+            Washing your hands is one of thesimplest ways you can protect
+          </div>
+        </div>
+
+        <div className="contagion-card">
+          <div className="contagion-card-image">
+            <Contained />
+          </div>
+          <div className="contagion-card-text">
+            <div className="contagion-card-text-head">Containted Objects</div>
+          </div>
+          <div className="contagion-card-text-para">
+            Use the tissue while sneezing,In this way, you can protect your
+            droplets.
+          </div>
+        </div>
       </div>
     </div>
   );
 }
-
-const Card = ({ image, head, para }) => {
-  return (
-    <div className="contagion-card">
-      <div className="contagion-card-image">
-        <Image
-          src={image}
-          layout="responsive"
-          width={500}
-          height={500}
-          alt="hero_girl"
-        />
-      </div>
-      <div className="contagion-card-text">
-        <div className="contagion-card-text-head">{head}</div>
-      </div>
-      <div className="contagion-card-text-para">{para}</div>
-    </div>
-  );
-};

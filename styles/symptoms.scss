@@ -28,3 +28,11 @@
     padding: 0px 20%;
   }
 }
+
+@media only screen and (max-width: 786px) {
+  .symptoms {
+    &-image {
+      padding: 0px;
+    }
+  }
+}

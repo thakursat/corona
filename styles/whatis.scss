@@ -50,7 +50,7 @@
 
 @media only screen and (max-width: 786px) {
   .whatis {
-    flex-direction: column;
+    flex-direction: column-reverse;
     &-left {
       width: 100%;
     }
