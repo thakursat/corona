@@ -1,0 +1,71 @@
+.contagion {
+  margin: 40px 0px;
+  &-head {
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+  }
+  &-head1 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: $red;
+  }
+  &-head2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: $heading;
+  }
+  &-para {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    font-weight: 400;
+    color: $para;
+  }
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0px;
+  }
+  &-card {
+    max-width: 400px;
+    background-color: white;
+    box-shadow: 0px 35px 87px rgba(0, 0, 0, 0.11);
+    border-radius: 10px;
+    padding: 40px;
+    margin: 0px 10px;
+    &-image {
+      padding: 40px;
+    }
+    &-text {
+      text-align: center;
+      &-head {
+        color: $heading;
+        font-weight: 500;
+        font-size: 1.5rem;
+      }
+      &-para {
+        color: $para;
+        text-align: center;
+        margin: 20px 0px;
+      }
+    }
+  }
+  // &-card:hover {
+  //   border-bottom: 5px solid $red;
+  // }
+}
+
+@media only screen and (max-width: 786px) {
+  .contagion {
+    &-wrapper {
+      flex-direction: column;
+    }
+    &-card {
+      width: 100%;
+      max-width: 500px;
+      margin: 30px auto;
+    }
+  }
+}

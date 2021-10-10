@@ -1,0 +1,61 @@
+.whatis {
+  display: flex;
+  margin: 40px 0px;
+  background-image: linear-gradien(#fff8f8, white);
+  &-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    &-text {
+      margin: 0px 8%;
+      &-head1 {
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin-bottom: 12px;
+        color: $red;
+      }
+      &-head2 {
+        font-size: 2.2rem;
+        font-weight: 700;
+        margin-bottom: 25px;
+        color: $heading;
+      }
+      &-para {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        color: $para;
+      }
+      &-button {
+        background-color: rgba(250, 86, 82, 0.15);
+        color: $red;
+        font-weight: bold;
+        margin: 30px 0px;
+        padding: 15px 40px;
+        border-radius: 30px;
+        border: transparent;
+      }
+    }
+  }
+  &-right {
+    width: 50%;
+    object-fit: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 5%;
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  .whatis {
+    flex-direction: column;
+    &-left {
+      width: 100%;
+    }
+    &-right {
+      width: 100%;
+    }
+  }
+}
