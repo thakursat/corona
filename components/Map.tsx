@@ -25,7 +25,6 @@ export default function Map() {
       .catch((err) => console.log(err));
     setLoading(false);
   };
-
   const handleClick = (val) => {
     setViewport({
       ...viewport,
@@ -42,7 +41,7 @@ export default function Map() {
     <div className="live-report-wrapper container">
       <ReactMapGL
         {...viewport}
-        mapboxApiAccessToken={process.env.API_ACCESS_TOKEN}
+        mapboxApiAccessToken={process.env.NEXT_PUBLIC_API_ACCESS_TOKEN}
         onViewportChange={(nextViewport) => setViewport(nextViewport)}
       ></ReactMapGL>
       <div className="live-report">
