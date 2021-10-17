@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import WhatIs from "../components/WhatIs";
 import Contagion from "../components/Contagion";
 import Symptoms from "../components/Symptoms";
+import Map from "../components/Map";
 import Footer from "../components/Footer";
 
 export default function index() {
@@ -14,6 +15,7 @@ export default function index() {
       <WhatIs />
       <Contagion />
       <Symptoms />
+      <Map />
       <div className="anyques container">
         <p className="anyques-text">
           Have Question in mind?
@@ -28,6 +30,7 @@ export default function index() {
           <button className="anyques-button">Send</button>
         </div>
       </div>
+
       <Footer />
     </div>
   );

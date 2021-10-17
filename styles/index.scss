@@ -15,7 +15,6 @@ a {
 * {
   box-sizing: border-box;
 }
-
 @import "./constants.scss";
 @import "./common.scss";
 @import "./navbar.scss";
@@ -23,6 +22,7 @@ a {
 @import "./whatis.scss";
 @import "./contagion.scss";
 @import "./symptoms.scss";
+@import "./map.scss";
 @import "./footer.scss";
 
 .anyques {
