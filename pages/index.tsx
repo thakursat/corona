@@ -9,7 +9,7 @@ import AirTrans from "../assets/svg/air_trans.svg";
 import Contained from "../assets/svg/contained.svg";
 import Human from "../assets/svg/human.svg";
 
-export default function index() {
+export default function Index() {
   const [apiData, setApiData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [viewport, setViewport] = useState({
